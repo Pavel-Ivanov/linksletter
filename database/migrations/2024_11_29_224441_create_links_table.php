@@ -20,7 +20,8 @@ return new class extends Migration
             $table->integer('position')->nullable();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
-        });    }
+        });
+    }
 
     /**
      * Reverse the migrations.
